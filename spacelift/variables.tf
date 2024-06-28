@@ -76,7 +76,7 @@ variable "env_vars" {
     context_name = string
     name         = string
     value        = string
-    is_secret    = bool
+    is_secret    = optional(bool, false)
   }))
   default = {}
 }

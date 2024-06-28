@@ -49,6 +49,7 @@ resource "spacelift_policy" "this" {
   name     = each.key
   body     = file("${path.module}/policies/${each.value.policy_name}.rego")
   type     = each.value.type
+  space_id = each.value.space_name
 }
 
 
@@ -64,6 +65,7 @@ resource "spacelift_context" "this" {
   description = each.value.description
   name        = each.value.name
   before_init = each.value.before_init
+  space_id    = each.value.space_name
 }
 
 resource "spacelift_environment_variable" "this" {

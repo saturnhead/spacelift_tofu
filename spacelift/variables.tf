@@ -47,6 +47,7 @@ variable "policies" {
   type = map(object({
     policy_name = string
     type        = optional(string, "PLAN")
+    space_name  = optional(string, "root")
   }))
   default = {}
 }
@@ -67,6 +68,7 @@ variable "contexts" {
     description = string
     name        = string
     before_init = optional(list(string), [])
+    space_name  = optional(string, "root")
   }))
   default = {}
 }

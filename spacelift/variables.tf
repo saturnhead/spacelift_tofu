@@ -8,6 +8,7 @@ variable "stacks" {
     terraform_workflow_tool = string
     version                 = string
     labels                  = list(string)
+    space_name              = optional(string, "root")
   }))
 }
 

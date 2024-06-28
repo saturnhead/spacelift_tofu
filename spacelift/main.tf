@@ -18,6 +18,7 @@ resource "spacelift_stack" "this" {
   terraform_workflow_tool = each.value.terraform_workflow_tool
   terraform_version       = each.value.version
   labels                  = each.value.labels
+  space_id                = each.value.space_name
 }
 
 resource "spacelift_aws_integration_attachment" "integration" {

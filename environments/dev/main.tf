@@ -26,7 +26,7 @@ module "dev" {
       integration_id = "01H79TE7EP3W7K4AMMV447J189"
       stack_name     = "stack1"
     }
-    integration1 = {
+    integration2 = {
       integration_id = "01H79TE7EP3W7K4AMMV447J189"
       stack_name     = "stack2"
     }

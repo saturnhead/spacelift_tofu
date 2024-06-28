@@ -102,7 +102,7 @@ module "dev" {
     stack2_ami = {
       context_name = "context2"
       name         = "TF_VAR_ami"
-      value        = "ami-06612c3e76b307724"
+      value        = "ami-099a8245f5daa82bf"
     }
     stack2_instance_type = {
       context_name = "context2"

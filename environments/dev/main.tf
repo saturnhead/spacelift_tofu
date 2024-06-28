@@ -51,11 +51,11 @@ module "dev" {
   }
   policy_attachments = {
     attachment1 = {
-      policy_name = "tfsec"
+      policy_name = "policy1"
       stack_name  = "stack1"
     }
     attachment2 = {
-      policy_name = "tfsec"
+      policy_name = "policy1"
       stack_name  = "stack2"
     }
   }
